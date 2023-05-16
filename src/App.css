@@ -19,3 +19,33 @@ button:hover {
     background: #c23866;
     color: #fff;
 }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    grid-gap: 20px;
+}
+
+@media(max-width: 780px) {
+    .card-grid{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10px;
+        grid-gap: 10px;
+    }
+
+    .App {
+        margin: 10px auto;
+    }
+
+    .App h1 {
+        font-size: 25px;
+    }
+
+    button {
+        padding: 4px 8px;
+        margin: 5px auto;
+        font-size: .7em;
+    }
+}
+
